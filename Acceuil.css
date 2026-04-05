@@ -249,3 +249,21 @@ footer h4 {
     margin: 0;
     color: #ffffff;
 }
+
+
+.social-icons {
+    margin-top: 20px; /* Espace au-dessus des icônes */
+    display: flex;    /* Aligne les icônes côte à côte */
+    gap: 15px;        /* Espace entre Facebook et Instagram */
+}
+
+.social-img {
+    width: 24px;      /* Ajuste la taille selon tes besoins */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-img:hover {
+    transform: scale(1.1); /* Petit effet de zoom au survol */
+    filter: brightness(0.8); /* Optionnel : assombrit légèrement au survol */
+}
