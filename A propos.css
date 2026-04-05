@@ -108,6 +108,33 @@ body {
     margin-bottom: 15px;
 }
 
+
+/* Style pour les images de valeurs */
+.value-icon {
+    width: 60px;          /* Ajuste la taille selon tes images */
+    height: 60px;         /* Garde un ratio carré */
+    object-fit: contain;  /* Évite de déformer l'image */
+    margin-bottom: 20px;  /* Espace entre l'image et le titre h3 */
+    display: block;       /* Permet de centrer avec margin auto */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.value-card {
+    background: white;
+    padding: 40px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+}
+
+.value-card h3 {
+    color: #1a2a44;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
 /* --- 5. NOTRE ÉQUIPE --- */
 .team-section {
     padding: 80px 10%;
