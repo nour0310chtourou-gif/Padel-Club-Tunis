@@ -1,0 +1,111 @@
+/* Configuration Générale */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    color: #1a2a44;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.section-container {
+    padding: 80px 10%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+
+
+/* Footer */
+footer { background-color: var(--navy-blue); color: white; padding: 60px 10% 20px; }
+.footer-container { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; padding-top: 20px; text-align: center; font-size: 0.8rem; }
+
+
+/* --- Correction des liens de navigation du footer --- */
+
+.footer-nav ul {
+    list-style: none; /* Supprime les points/puces */
+    padding: 0;
+}
+
+.footer-nav ul li a {
+    color: #ffffff !important; /* Force la couleur blanche */
+    text-decoration: none;     /* Supprime le soulignement */
+    opacity: 0.8;              /* Légère transparence pour le style */
+    transition: 0.3s;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* Assure que le lien reste blanc même s'il a été visité */
+.footer-nav ul li a:visited {
+    color: #ffffff !important;
+}
+
+/* Effet au survol : devient plus brillant ou change de couleur */
+.footer-nav ul li a:hover {
+    opacity: 1;
+    color: var(--primary-green) !important; /* Optionnel : passe au vert au survol */
+}
+
+/* Augmente l'espace sous les titres du footer */
+footer h3, 
+footer h4 {
+    margin-bottom: 25px; /* Ajustez cette valeur (20px, 30px...) selon vos préférences */
+    display: block;      /* Garantit que la marge s'applique correctement */
+    font-weight: 700;    /* Pour que le titre reste bien visible */
+}
+
+/* Optionnel : Si vous voulez aussi espacer un peu plus les lignes de texte entre elles */
+.footer-info p, 
+.footer-nav ul li, 
+.footer-contact p {
+    margin-bottom: 12px; 
+}
+
+/* Conteneur pour aligner l'image et le texte sur la même ligne */
+.contact-item {
+    display: flex;
+    align-items: center; /* Aligne l'icône verticalement au milieu du texte */
+    gap: 15px;           /* Espace entre l'image et le texte */
+    margin-bottom: 15px; /* Espace entre chaque ligne de contact */
+}
+
+/* Style spécifique pour vos icônes images */
+.contact-icon {
+    width: 20px;         /* Ajustez la largeur selon vos images */
+    height: auto;        /* Garde les proportions de l'image */
+    object-fit: contain;
+}
+
+/* Suppression des marges par défaut des paragraphes pour un alignement parfait */
+.contact-item p {
+    margin: 0;
+    color: #ffffff;
+}
+
+
+.social-icons {
+    margin-top: 20px; /* Espace au-dessus des icônes */
+    display: flex;    /* Aligne les icônes côte à côte */
+    gap: 15px;        /* Espace entre Facebook et Instagram */
+}
+
+.social-img {
+    width: 24px;      /* Ajuste la taille selon tes besoins */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-img:hover {
+    transform: scale(1.1); /* Petit effet de zoom au survol */
+    filter: brightness(0.8); /* Optionnel : assombrit légèrement au survol */
+}

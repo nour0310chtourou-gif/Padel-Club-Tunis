@@ -1,0 +1,90 @@
+:root {
+    --primary-green: #c6e1d8;
+    --dark-green: #289C75;
+    --navy-blue: #334875;
+    --light-bg: #f4f9f7;
+    --text-color: #444;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+
+
+/* Header & Nav */
+header {
+    background-color: var(--navy-blue);
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Style du conteneur de logo */
+.logo-container a {
+    display: flex;
+    align-items: center; /* Aligne verticalement l'image et le texte */
+    text-decoration: none;
+    gap: 12px; /* Espace entre l'image et le texte */
+}
+
+/* Taille de l'image du logo */
+.logo-img {
+    height: 45px; /* Ajustez selon la taille de votre image */
+    width: auto;
+}
+
+/* Style du texte à côté du logo */
+.logo-text {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif; /* Pour garder le style élégant */
+    letter-spacing: 0.5px;
+}
+
+/* Effet au survol (optionnel) */
+.logo-container a:hover .logo-text {
+    color: var(--primary-green);
+    transition: 0.3s;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: var(--dark-green);
+}
