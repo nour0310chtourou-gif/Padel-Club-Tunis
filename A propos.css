@@ -1,0 +1,97 @@
+/* Configuration Générale */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    color: #1a2a44;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.section-container {
+    padding: 80px 10%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(6, 12, 50, 0.5), rgba(0,0,0,0.5)), url('about-team.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* Nos Valeurs */
+.values-section {
+    background-color: #e8f4f1; /* Couleur menthe claire */
+    padding: 80px 5%;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.value-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.value-card .icon { font-size: 2rem; margin-bottom: 15px; }
+
+/* Notre Équipe */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.team-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background: #e8f4f1;
+    color: #2d8a7d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.role { color: #2d8a7d; font-weight: bold; }
