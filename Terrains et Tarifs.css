@@ -1,0 +1,156 @@
+:root {
+    --primary-blue: #2c3e66;
+    --accent-green: #2ecc71;
+    --light-bg: #f4f7f6;
+    --text-dark: #34495e;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.active {
+    background: var(--accent-green);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* --- 2. HERO SECTION --- */
+.hero-section {
+    background: linear-gradient(rgba(6, 12, 50, 0.5), rgba(0,0,0,0.5)), url('terrain-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* Sections */
+.container {
+    padding: 60px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 40px;
+}
+
+/* Grille Terrains */
+.grid-terrains {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card-terrain {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background: white;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.status {
+    font-size: 0.7rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+.available { background: var(--accent-green); }
+.maintenance { background: #e74c3c; }
+
+/* Section Tarifs */
+.pricing-section {
+    background-color: #ecf3f1;
+    padding-bottom: 80px;
+}
+
+.grid-pricing {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.price-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.price-card.popular {
+    border: 2px solid var(--accent-green);
+    transform: scale(1.05);
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #d4a017;
+    color: white;
+    padding: 2px 15px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+    margin: 20px 0;
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.price-card ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.price-card ul li::before {
+    content: "•";
+    color: var(--accent-green);
+    font-weight: bold;
+    margin-right: 10px;
+}

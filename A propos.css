@@ -4,7 +4,7 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    color: #444;
+    color: #334875;
     line-height: 1.6;
     background-color: #fff;
 }
@@ -49,7 +49,7 @@ body {
 
 .histoire-container h2 {
     font-family: 'Playfair Display', serif;
-    color: #1a2a44; /* Ton bleu marine */
+    color: #334875; /* Ton bleu marine */
     font-size: 2.8rem;
     margin-top: 0;      /* Supprime l'espace inutile en haut */
     margin-bottom: 30px; 
@@ -62,7 +62,7 @@ body {
     line-height: 1.8;
     margin-bottom: 25px;
     text-align: justify; /* Pour un rendu pro sur les bords */
-    color: #4a4a4a;
+    color: #334875;
 }
 
 /* --- 4. NOS VALEURS --- */
@@ -135,61 +135,78 @@ body {
     font-size: 1.4rem;
 }
 
-/* --- 5. NOTRE ÉQUIPE --- */
+/* --- 2. SECTION ET TITRE --- */
 .team-section {
-    padding: 80px 10%;
-    background-color: #fff;
-    text-align: center;
+    padding: 60px 10%; /* Grand espacement autour */
+    text-align: center; /* Centre le titre */
 }
 
 .team-section h2 {
-    font-family: 'Playfair Display', serif;
-    color: #1a2a44;
-    margin-bottom: 50px;
+    font-family: 'Playfair Display', serif; /* La police premium du titre */
+    color: #1a2a44;       /* Le bleu marine foncé du club */
     font-size: 2.5rem;
+    margin-bottom: 50px;  /* Espace avant les cartes */
+    font-weight: bold;
 }
 
+/* --- 3. GRILLE DE CARTES --- */
 .team-grid {
     display: grid;
+    /* Crée 4 colonnes qui s'adaptent si l'écran est petit */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
+    gap: 30px; /* Espace précis entre les cartes */
+    max-width: 1200px;
+    margin: 0 auto; /* Centre la grille sur la page */
 }
 
+/* --- 4. STYLE DE CHAQUE CARTE --- */
 .team-card {
-    border: 1px solid #eee;
-    border-radius: 12px;
-    padding: 40px 20px;
-    transition: all 0.3s ease;
+    border: 1px solid #c9d6e8; /* La bordure bleue très fine */
+    border-radius: 12px;       /* Coins arrondis précis */
+    padding: 40px 20px;       /* Grand espacement interne */
+    text-align: center;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease; /* Effet optionnel au survol */
 }
 
 .team-card:hover {
-    border-color: #2d8a7d;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Effet de profondeur au survol */
 }
 
+/* --- 5. L'INITIALE STYLISÉE (AVATAR) --- */
 .avatar {
-    width: 70px;
-    height: 70px;
-    background: #e8f4f1;
-    color: #2d8a7d;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #e8f4f1; /* Le vert menthe très pâle */
+    color: #2d8a7d;            /* Le vert émeraude de la lettre */
+    font-family: 'Segoe UI', sans-serif;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 2rem;           /* Grosse lettre */
+    border-radius: 50%;        /* Rond parfait */
+    display: flex;
+    align-items: center;       /* Centre verticalement la lettre */
+    justify-content: center;   /* Centre horizontalement la lettre */
+    margin: 0 auto 20px;       /* Centre l'avatar dans la carte et espace en bas */
 }
 
+/* --- 6. LE TEXTE DANS LA CARTE --- */
 .team-card h3 {
-    margin-bottom: 5px;
+    font-family: 'Segoe UI', sans-serif;
     color: #1a2a44;
+    font-size: 1.4rem;
+    margin-bottom: 5px;  /* Espace très réduit avec le rôle */
 }
 
-.role { 
-    color: #2d8a7d; 
-    font-weight: bold; 
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.role {
+    color: #2d8a7d;       /* Le vert émeraude pour le rôle */
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 20px; /* Espace avant la description */
+}
+
+.description {
+    color: #777;          /* Gris clair pour la description */
+    font-size: 0.95rem;   /* Texte plus petit */
+    line-height: 1.5;     /* Interligne confortable */
 }
