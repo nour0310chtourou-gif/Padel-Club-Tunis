@@ -1,158 +1,143 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Padel Club Tunis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padel Club Tunis</title>
+    <link rel="stylesheet" href="Acceuil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- ── NAVBAR ── -->
-<nav id="mainNav">
-  <a href="#" class="nav-logo">Padel Club Tunis</a>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#" class="active">Accueil</a></li>
-    <li><a href="#about">À Propos</a></li>
-    <li><a href="#statsbar">Terrains &amp; Tarifs</a></li>
-    <li><a href="#news">Événements</a></li>
-    <li><a href="#">Adhésion</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-  <button class="burger" id="burger" aria-label="Menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-</nav>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="Acceuil.html">
+                <img src="logo-padel.png" alt="Logo Padel Club Tunis" class="logo-img">
+                <span class="logo-text">Padel Club Tunis</span>
+                </a>
+              </div>
+            <ul>
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#">À Propos</a></li>
+                <li><a href="#">Terrains & Tarifs</a></li>
+                <li><a href="#">Événements</a></li>
+                <li><a href="#">Adhésion</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- ── HERO ── -->
-<section id="hero">
-  <div class="hero-content">
-    <h1 class="hero-title">Padel Club Tunis</h1>
-    <p class="hero-sub">
-      Le premier club de padel en Tunisie. Sport, passion et
-      convivialité au cœur de la capitale.
-    </p>
-    <div class="hero-btns">
-      <a href="#" class="btn btn-green">Devenir membre</a>
-      <a href="#statsbar" class="btn btn-outline-w">Voir les terrains</a>
-    </div>
-  </div>
-</section>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Padel Club Tunis</h1>
+            <p>Le premier club de padel en Tunisie. Sport, passion et convivialité au cœur de la capitale.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Devenir membre</a>
+                <a href="#" class="btn btn-secondary">Voir les terrains</a>
+            </div>
+        </div>
+    </section>
 
-<!-- ── STATS ── -->
-<section id="statsbar">
-  <div class="stats-inner">
-    <div class="stat-item">
-      <div class="stat-icon">🏆</div>
-      <div class="stat-num" data-target="20" data-suffix="+">0</div>
-      <div class="stat-lbl">Tournois</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-icon">👥</div>
-      <div class="stat-num" data-target="500" data-suffix="+">0</div>
-      <div class="stat-lbl">Membres actifs</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-icon">📍</div>
-      <div class="stat-num" data-target="6" data-suffix="">0</div>
-      <div class="stat-lbl">Terrains</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-icon">📅</div>
-      <div class="stat-num" data-target="2018" data-suffix="">0</div>
-      <div class="stat-lbl">Depuis</div>
-    </div>
-  </div>
-</section>
+    <section class="stats">
+        <div class="stat-item">
+            <img src="trophy.png" alt="Logo Padel Club Tunis" class="logo-img">
+            <h2>20+</h2>
+            <p>Tournois/an</p>
+        </div>
+        <div class="stat-item">
+            <img src="user-groups.png" alt="Logo Padel Club Tunis" class="logo-img">
+            <h2>500+</h2>
+            <p>Membres actifs</p>
+        </div>
+        <div class="stat-item">
+            <img src="location (1).png" alt="Logo Padel Club Tunis" class="logo-img">
+            <h2>6</h2>
+            <p>Terrains</p>
+        </div>
+        <div class="stat-item">
+            <img src="agenda.png" alt="Logo Padel Club Tunis" class="logo-img">
+            <h2>2018</h2>
+            <p>Depuis</p>
+        </div>
+    </section>
 
-<!-- ── ABOUT ── -->
-<section id="about">
-  <div class="about-inner">
-    <div class="about-text">
-      <p class="about-label">Qui sommes-nous</p>
-      <h2 class="about-title">Bienvenue au <span>Padel Club Tunis</span></h2>
-      <p class="about-p">
-        Fondé en 2018, Padel Club Tunis est la référence du padel en Tunisie.
-        Nos installations modernes, notre équipe de coachs professionnels et
-        notre communauté passionnée font de notre club l'endroit idéal pour
-        découvrir et pratiquer le padel.
-      </p>
-      <p class="about-p">
-        Que vous soyez débutant ou joueur confirmé, nous vous accueillons dans
-        un cadre convivial et professionnel. Nos 6 terrains aux normes
-        internationales vous attendent !
-      </p>
-      <a href="#" class="btn-sm">En savoir plus →</a>
-    </div>
-    <div class="about-img">
-      <img
-        src="https://images.unsplash.com/photo-1618355776464-8666794d2520?w=800&q=80"
-        alt="Terrain de padel intérieur"
-        width="100%"
-      />
-    </div>
-  </div>
-</section>
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome-text">
+                <h2>Bienvenue au <span>Padel Club Tunis</span></h2>
+                <p>Fondé en 2018, Padel Club Tunis est la référence du padel en Tunisie. Nos installations modernes, notre équipe de coachs professionnels et notre communauté passionnée font de notre club l'endroit idéal pour découvrir et pratiquer le padel.</p>
+                <p>Que vous soyez débutant ou joueur confirmé, nous vous accueillons dans un cadre convivial et professionnel. Nos 6 terrains aux normes internationales vous attendent !</p>
+                <a href="#" class="btn-outline">En savoir plus &rarr;</a>
+            </div>
+            <div class="welcome-image">
+                <img src="terrain-1.jpg" alt="Terrain de Padel">
+            </div>
+        </div>
+    </section>
 
-<!-- ── ACTUALITÉS ── -->
-<section id="news">
-  <div class="sec-header">
-    <h2 class="sec-title">Actualités</h2>
-  </div>
-  <div class="news-grid">
-    <article class="news-card">
-      <p class="news-date">15 Avril 2026</p>
-      <h3 class="news-title">Tournoi de Printemps 2026</h3>
-      <p class="news-text">
-        Inscriptions ouvertes pour le tournoi de printemps.
-        Catégories hommes, femmes et mixtes.
-      </p>
-    </article>
-    <article class="news-card">
-      <p class="news-date">1 Juin 2026</p>
-      <h3 class="news-title">Nouveaux horaires d'été</h3>
-      <p class="news-text">
-        Les terrains seront ouverts jusqu'à 23h pendant la saison estivale.
-      </p>
-    </article>
-    <article class="news-card">
-      <p class="news-date">10 Mai 2026</p>
-      <h3 class="news-title">Stage de perfectionnement</h3>
-      <p class="news-text">
-        Stage intensif avec notre coach professionnel. Places limitées.
-      </p>
-    </article>
-  </div>
-</section>
+    <section class="news">
+        <div class="container">
+            <h2 class="section-title">Actualités</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <span class="date">15 Avril 2026</span>
+                    <h3>Tournoi de Printemps 2026</h3>
+                    <p>Inscriptions ouvertes pour le tournoi de printemps. Catégories hommes, femmes et mixtes.</p>
+                </div>
+                <div class="news-card">
+                    <span class="date">1 Juin 2026</span>
+                    <h3>Nouveaux horaires d'été</h3>
+                    <p>Les terrains seront ouverts jusqu'à 23h pendant la saison estivale.</p>
+                </div>
+                <div class="news-card">
+                    <span class="date">10 Mai 2026</span>
+                    <h3>Stage de perfectionnement</h3>
+                    <p>Stage intensif avec notre coach professionnel. Places limitées !</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ── FOOTER ── -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <strong class="footer-brand-name">Padel Club Tunis</strong>
-      <p>
-        Le premier club de padel en Tunisie. Rejoignez notre communauté
-        passionnée et découvrez le sport qui fait vibrer la capitale.
-      </p>
-    </div>
-    <div class="footer-nav">
-      <p class="footer-heading">Navigation</p>
-      <ul class="footer-links">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#about">À Propos</a></li>
-        <li><a href="#statsbar">Terrains &amp; Tarifs</a></li>
-        <li><a href="#news">Événements</a></li>
-        <li><a href="#">Adhésion</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-contact">
-      <p class="footer-heading">Contact</p>
-      <p>📞 +216 71 123 456</p>
-      <p>📍 Zone Sportive, La Marsa, Tunis</p>
-      <p>✉️ contact@padelclubtunis.tn</p>
-    </div>
-  </div>
-  <p class="footer-copy">© 2026 Padel Club Tunis. Tous droits réservés.</p>
-</footer>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Padel Club Tunis</h3>
+                <p>Le premier club de padel en Tunisie. Rejoignez notre communauté passionnée et découvrez le sport qui fait vibrer le monde.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">À Propos</a></li>
+                    <li><a href="#">Terrains & Tarifs</a></li>
+                    <li><a href="#">Événements</a></li>
+                    <li><a href="#">Adhésion</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-contact">
+              <h4>Contact</h4>
+              <div class="contact-item">
+                  <img src="telephone.png" alt="Téléphone" class="contact-icon">
+                  <p>+216 71 123 456</p>
+                 </div>
+              <div class="contact-item">
+                  <img src="location (2).png" alt="Localisation" class="contact-icon">
+                  <p>Zone Sportive, La Marsa, Tunis</p>
+              </div>
+              <div class="contact-item">
+                 <img src="mail (1).png" alt="Email" class="contact-icon">
+                  <p>contact@padelclubtunis.tn</p>
+              </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Padel Club Tunis. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
