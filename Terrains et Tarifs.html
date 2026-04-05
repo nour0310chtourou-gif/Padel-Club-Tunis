@@ -20,9 +20,9 @@
                 </a>
               </div>
             <ul>
-                <li><a href="Acceuil.html" class="active">Accueil</a></li>
+                <li><a href="Acceuil.html">Accueil</a></li>
                 <li><a href="A propos.html">À Propos</a></li>
-                <li><a href="Terrains et Tarifs.html">Terrains & Tarifs</a></li>
+                <li><a href="Terrains et Tarifs.html" class="active">Terrains & Tarifs</a></li>
                 <li><a href="Événements.html">Événements</a></li>
                 <li><a href="Adhésion.html">Adhésion</a></li>
                 <li><a href="Contact.html">Contact</a></li>
@@ -40,66 +40,111 @@
     </section>
 
     <main>
-        <section class="container">
-            <h2 class="section-title">Nos 6 Terrains</h2>
-            <div class="grid-terrains">
-                <div class="card-terrain">
-                    <div class="card-header">
-                        <h3>Terrain 1 - Indoor</h3>
-                        <span class="status available">Disponible</span>
-                    </div>
+        <section class="terrains-section">
+        <h1 class="main-title">Nos 6 Terrains</h1>
+        
+        <div class="terrains-grid">
+            <div class="terrain-card">
+                <div class="card-header">
+                    <h3>Terrain 1 - Indoor</h3>
+                    <span class="badge green">Disponible</span>
+                </div>
+                <div class="card-body">
                     <p><strong>Type :</strong> Couvert</p>
                     <p><strong>Surface :</strong> Gazon synthétique</p>
                     <p><strong>Éclairage :</strong> LED</p>
                 </div>
-                <div class="card-terrain">
-                    <div class="card-header">
-                        <h3>Terrain 4 - Outdoor</h3>
-                        <span class="status maintenance">Maintenance</span>
-                    </div>
+            </div>
+
+            <div class="terrain-card">
+                <div class="card-header">
+                    <h3>Terrain 2 - Indoor</h3>
+                    <span class="badge green">Disponible</span>
+                </div>
+                <div class="card-body">
+                    <p><strong>Type :</strong> Couvert</p>
+                    <p><strong>Surface :</strong> Gazon synthétique</p>
+                    <p><strong>Éclairage :</strong> LED</p>
+                </div>
+            </div>
+
+            <div class="terrain-card">
+                <div class="card-header">
+                    <h3>Terrain 3 - Outdoor</h3>
+                    <span class="badge green">Disponible</span>
+                </div>
+                <div class="card-body">
                     <p><strong>Type :</strong> Extérieur</p>
                     <p><strong>Surface :</strong> Gazon synthétique</p>
                     <p><strong>Éclairage :</strong> LED</p>
                 </div>
-                <div class="card-terrain">
-                    <div class="card-header">
-                        <h3>Terrain 5 - Premium</h3>
-                        <span class="status available">Disponible</span>
-                    </div>
+            </div>
+
+            <div class="terrain-card">
+                <div class="card-header">
+                    <h3>Terrain 4 - Outdoor</h3>
+                    <span class="badge red">Maintenace</span>
+                </div>
+                <div class="card-body">
+                    <p><strong>Type :</strong> Extérieur</p>
+                    <p><strong>Surface :</strong> Gazon synthétique</p>
+                    <p><strong>Éclairage :</strong> LED</p>
+                </div>
+            </div>
+
+            <div class="terrain-card">
+                <div class="card-header">
+                    <h3>Terrain 5 - Prenium</h3>
+                    <span class="badge green">Disponible</span>
+                </div>
+                <div class="card-body">
                     <p><strong>Type :</strong> Couvert</p>
                     <p><strong>Surface :</strong> Gazon PRO</p>
                     <p><strong>Éclairage :</strong> LED PRO</p>
                 </div>
             </div>
-        </section>
+
+            <div class="terrain-card">
+                <div class="card-header">
+                    <h3>Terrain 6 - Prenium</h3>
+                    <span class="badge green">Disponible</span>
+                </div>
+                <div class="card-body">
+                    <p><strong>Type :</strong> Couvert</p>
+                    <p><strong>Surface :</strong> Gazon PRO</p>
+                    <p><strong>Éclairage :</strong> LED PRO</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
         <section class="pricing-section">
             <div class="container">
-                <h2 class="section-title">Nos Tarifs</h2>
+                <h1 class="main-title">Nos Tarifs</h1>
                 <div class="grid-pricing">
                     <div class="price-card">
-                        <h3>Découverte</h3>
-                        <div class="price">300DT<span>/heure</span></div>
+                        <h3 class="titre">Découverte</h3>
+                        <div class="price">30DT<span>/heure</span></div>
                         <ul>
                             <li>Accès terrain</li>
                             <li>Raquettes fournies</li>
                             <li>Balles fournies</li>
                         </ul>
                     </div>
-                    <div class="price-card popular">
-                        <span class="badge">Populaire</span>
-                        <h3>Membre</h3>
-                        <div class="price">1500DT<span>/mois</span></div>
-                        <ul>
-                            <li>Accès illimité</li>
-                            <li>Réservation prioritaire</li>
-                            <li>Vestiaires VIP</li>
-                            <li>10% remise boutique</li>
-                        </ul>
-                    </div>
+ <div class="price-card popular">
+    <span class="pricing-badge">Populaire</span>
+
+    <h3 class="titre">Formule Club</h3>
+    <div class="price">150DT <span>/an</span></div>
+    <ul>
+        <li>Accès illimité</li>
+        <li>Réservation prioritaire</li>
+        <li>Réduction tournois</li>
+    </ul>
+</div>
                     <div class="price-card">
-                        <h3>Premium</h3>
-                        <div class="price">2500DT<span>/mois</span></div>
+                        <h3 class="titre">Premium</h3>
+                        <div class="price">250DT<span>/mois</span></div>
                         <ul>
                             <li>Accès illimité</li>
                             <li>Terrains Premium</li>
@@ -110,6 +155,30 @@
                 </div>
             </div>
         </section>
+        <section class="opening-hours">
+    <div class="container">
+        <h2 class="main-title">Horaires d'ouverture</h2>
+        
+        <div class="hours-card">
+            <div class="hour-row">
+                <span class="day">Lundi - Vendredi</span>
+                <span class="time">07:00 - 23:00</span>
+            </div>
+            <div class="hour-row">
+                <span class="day">Samedi</span>
+                <span class="time">08:00 - 22:00</span>
+            </div>
+            <div class="hour-row">
+                <span class="day">Dimanche</span>
+                <span class="time">08:00 - 20:00</span>
+            </div>
+            <div class="hour-row">
+                <span class="day">Jours fériés</span>
+                <span class="time">09:00 - 18:00</span>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
         <footer>
@@ -130,6 +199,8 @@
 
                 </ul>
             </div>
+
+    
 <div class="footer-contact">
     <h4>Contact</h4>
     <div class="contact-item">

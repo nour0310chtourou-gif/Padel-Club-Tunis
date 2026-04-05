@@ -1,9 +1,18 @@
+/* =========================================
+   1. CONFIGURATION & VARIABLES (Exactes)
+   ========================================= */
 :root {
-    --primary-blue: #2c3e66;
-    --accent-green: #2ecc71;
-    --light-bg: #f4f7f6;
-    --text-dark: #34495e;
+    --primary-green: #b7cec6;
+    --dark-green: #289C75;
+    --dark-green-12: #289C751F; /* Ton vert 12% pour la barre stats */
+    --navy-blue: #334875;
+    --light-bg: #f4f9f7;
+    --text-color: #334875;
+    --text-gray: #586069;
     --white: #ffffff;
+    --border-color: #d0d7de;
+    --accent-gold: #d4a017;
+    --transition: 0.3s ease;
 }
 
 * {
@@ -12,18 +21,17 @@
     box-sizing: border-box;
 }
 
-
-
-
-
-.active {
-    background: var(--accent-green);
-    padding: 5px 15px;
-    border-radius: 5px;
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--white);
 }
 
-/* --- 2. HERO SECTION --- */
-.hero-section {
+/* =========================================
+   2. HERO SECTION
+   ========================================= */
+.hero {
     background: linear-gradient(rgba(6, 12, 50, 0.5), rgba(0,0,0,0.5)), url('terrain-1.jpg');
     background-size: cover;
     background-position: center;
@@ -31,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--white);
     text-align: center;
 }
 
@@ -46,54 +54,94 @@
     max-width: 600px;
     margin: 0 auto;
 }
-/* Sections */
-.container {
-    padding: 60px 10%;
+
+/* =========================================
+   3. SECTION TERRAINS (Grille 3 colonnes)
+   ========================================= */
+.terrains-section {
+    padding: 80px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.section-title {
-    text-align: center;
+.main-title {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: var(--primary-blue);
-    margin-bottom: 40px;
+    color: var(--navy-blue);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-/* Grille Terrains */
-.grid-terrains {
+.terrains-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
-.card-terrain {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    background: white;
+.terrain-card {
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 25px;
+    background: var(--white);
+    transition: var(--transition);
+}
+
+.terrain-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
 }
 
 .card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.status {
-    font-size: 0.7rem;
-    padding: 3px 10px;
+.titre{
+    font-family: 'Playfair Display', serif;
+    color: var(--navy-blue);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.card-header h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--dark-green); /* Corrigé pour utiliser la variable */
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* BADGES DISPONIBILITÉ */
+.badge {
+    padding: 6px 15px;
     border-radius: 20px;
-    color: white;
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
-.available { background: var(--accent-green); }
-.maintenance { background: #e74c3c; }
+.badge.green { background-color: #289C75; }
+.badge.red { background-color: #e74c3c; }
 
-/* Section Tarifs */
+.card-body p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.card-body p strong {
+    color: var(--navy-blue);
+    font-weight: 700;
+}
+
+/* =========================================
+   4. SECTION TARIFS (Pricing)
+   ========================================= */
 .pricing-section {
     background-color: #ecf3f1;
-    padding-bottom: 80px;
+    padding: 80px 5%;
+    text-align: center;
 }
 
 .grid-pricing {
@@ -101,56 +149,148 @@
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    margin-top: 60px; /* Plus d'espace en haut pour le badge */
 }
 
 .price-card {
-    background: white;
+    background: var(--white);
     padding: 40px;
     border-radius: 15px;
     width: 300px;
     text-align: center;
-    position: relative;
+    position: relative; /* CRUCIAL pour le positionnement du badge */
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: var(--transition);
 }
 
 .price-card.popular {
-    border: 2px solid var(--accent-green);
-    transform: scale(1.05);
+    border: 2px solid var(--dark-green);
+    transform: scale(1.05); /* Légèrement plus grand */
+    z-index: 1; /* S'assure qu'il passe au-dessus des autres */
 }
 
-.badge {
+/* --- LE BADGE POPULAIRE (Corrigé et Renommé) --- */
+.pricing-badge {
     position: absolute;
-    top: -12px;
+        list-style: none;
+
+    top: -15px; /* Positionné à cheval sur le bord haut */
     left: 50%;
-    transform: translateX(-50%);
-    background: #d4a017;
-    color: white;
-    padding: 2px 15px;
-    font-size: 0.8rem;
-    border-radius: 5px;
+    transform: translateX(-50%); /* Centrage horizontal parfait */
+    background: var(--accent-gold); /* Ta variable or/jaune */
+    color: var(--white);
+    padding: 5px 20px;
+    font-size: 0.85rem;
+    border-radius: 20px; /* Bords très arrondis comme sur l'image */
+    font-weight: 700;
+    white-space: nowrap; /* Empêche le texte de passer sur deux lignes */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* Le reste du style des prix (inchangé) */
 .price {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    color: var(--primary-blue);
+    color: var(--navy-blue);
     margin: 20px 0;
 }
 
 .price span {
     font-size: 1rem;
     font-weight: normal;
+    color: var(--text-gray);
 }
 
 .price-card ul {
     list-style: none;
     text-align: left;
-    margin-top: 20px;
+    margin: 30px 0;
+}
+
+.price-card ul li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: var(--text-gray);
 }
 
 .price-card ul li::before {
-    content: "•";
-    color: var(--accent-green);
+    content: "✓";
+    color: var(--dark-green);
     font-weight: bold;
     margin-right: 10px;
+}   
+/* --- SECTION HORAIRES --- */
+.opening-hours {
+    padding: 80px 0;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+}
+
+/* La boîte blanche centrale */
+.hours-card {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px; /* Largeur pour correspondre à l'image */
+    margin: 0 auto;
+    overflow: hidden; /* Pour que les bordures des lignes respectent l'arrondi */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+/* Chaque ligne de jour */
+.hour-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.3s ease;
+}
+
+/* On enlève la bordure sur la dernière ligne */
+.hour-row:last-child {
+    border-bottom: none;
+}
+
+/* Effet de survol discret */
+.hour-row:hover {
+    background-color: var(--light-bg);
+}
+
+/* Style du texte (Jour) */
+.hour-row .day {
+    color: var(--navy-blue);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+/* Style des heures (Vert) */
+.hour-row .time {
+    color: var(--dark-green);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Ajustement pour mobile */
+@media (max-width: 600px) {
+    .hours-card {
+        width: 90%;
+    }
+    .hour-row {
+        padding: 15px 20px;
+    }
+    .hour-row .day, .hour-row .time {
+        font-size: 0.95rem;
+    }
+}
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .terrains-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .terrains-grid { grid-template-columns: 1fr; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .price-card.popular { transform: scale(1); }
 }
